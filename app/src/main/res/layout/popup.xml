@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/anim"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="treasure.json"/>
+
+
+
+        <TextView
+            android:id="@+id/greetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Well Played"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You Won"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:alpha="0.7"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/winText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You Won"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:alpha="0.7"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/green"/>
+
+        <Button
+            android:id="@+id/play_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_ripple"
+            app:backgroundTint="@null"
+            android:text="Play Again"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="20sp"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
